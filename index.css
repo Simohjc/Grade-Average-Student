@@ -1,0 +1,113 @@
+/* General page styles */
+body {
+    background-color: #f0f0f0;
+    color: #949672;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 50vh;
+    text-align: center;
+}
+
+/* Section styles */
+#section {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 80%; /* Increase the width to 80% */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 500px; /* Limit the height to 500px */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Title styles */
+h1 {
+    color: #e9af0e;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Subheading styles */
+h3 {
+    color: #757542;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Input and label styling */
+#project > line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+label {
+    font-size: 1em;
+    margin-top: 10px;
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+input[type="text"], input[type="number"] {
+    width: 50%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+input::placeholder {
+    text-align: center;
+    color: #ccc;
+}
+
+/* Button styles */
+button {
+    background-color: #87e58a; 
+    color: rgb(115, 138, 74);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1em;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result area */
+#resultLine {
+    margin-top: 20px;
+}
+
+#result {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2em;
+    background-color: #f9f9f9;
+}
+
+/* Explanation message */
+#expl {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Full list area */
+#fulllist {
+    text-align: left;
+    margin-top: 20px;
+    max-height: 150px; /* Limit height of the list */
+    overflow-y: auto;
+    padding-left: 0;
