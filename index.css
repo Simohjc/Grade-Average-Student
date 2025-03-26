@@ -65,7 +65,9 @@ input::placeholder {
     text-align: center;
     color: #ccc;
 }
-
+#resultLine > input::placeholder {
+     text-align: center;
+}
 /* Button styles */
 button {
     background-color: #87e58a; 
