@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    height: 50vh;
+    height: 100vh;
     text-align: center;
 }
 
