@@ -1,3 +1,23 @@
+  /* intro page */
+
+  function introPage(){
+    let myId = document.getElementById("ID").value.trim();
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const year = today.getFullYear();
+    const correctPassword = month + day + year;
+
+    myId = isNaN(myId) ? 0 : myId;
+    if (myId === correctPassword){
+      alert("Login successful!");
+      window.location.href = "heroPage.html";
+    }else {
+      alert("Incorrect password. Use today's date as MMDDYYYY.");
+      document.getElementById("ID").value = "";
+    }
+  }
+
 function noteAverage() {
     let firstName = document.getElementById('first').value.trim();
     let fgs = parseInt(document.getElementById('fg').value.trim());
