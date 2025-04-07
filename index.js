@@ -1,4 +1,4 @@
-function updateRobot() {
+function noteAverage() {
     let firstName = document.getElementById('first').value.trim();
     let fgs = parseInt(document.getElementById('fg').value.trim());
     let sgs = parseInt(document.getElementById('sg').value.trim());
