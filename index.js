@@ -73,7 +73,7 @@ function noteAverage() {
 
   // log out 
   function logOut(){
-    window.location.href = "hero.html";
+    window.location.href = "index.html";
   }
   
   // Load list when page loads
@@ -93,7 +93,7 @@ function noteAverage() {
     myId = isNaN(myId) ? 0 : myId;
     if (myId === correctPassword){
       alert("Login successful!");
-      window.location.href = "index.html";
+      window.location.href = "heroPage.html";
     }else {
       alert("Incorrect password. Use today's date as MMDDYYYY.");
       document.getElementById("ID").value = "";
