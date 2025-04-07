@@ -70,8 +70,29 @@ function updateRobot() {
     document.getElementById("fulllist").innerHTML = ""; // Clear list display
     alert("List cleared!");
   }
+
+  // log out 
+  function logOut(){
+    window.location.href = "hero.html";
+  }
   
   // Load list when page loads
   window.onload = displayStudentList;
+  
+
+  /* intro page */
+
+  function introPage(){
+    let myId = parseInt(document.getElementById("ID").value.trim());
+    myId = isNaN(myId) ? 0 : myId;
+    if (myId === 12031987){
+      window.location.href = "index.html";
+    }else {
+      alert("Wrong ID Number Try Again")
+      document.getElementById("ID").value = "";
+    }
+  }
+
+
   
   
