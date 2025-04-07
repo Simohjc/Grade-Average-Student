@@ -82,13 +82,20 @@ function noteAverage() {
 
   /* intro page */
 
-  function introPage(){
+   function introPage(){
     let myId = parseInt(document.getElementById("ID").value.trim());
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const year = today.getFullYear();
+    const correctPassword = day + month + year;
+
     myId = isNaN(myId) ? 0 : myId;
-    if (myId === 12031987){
+    if (myId === correctPassword){
+      alert("Login successful!");
       window.location.href = "index.html";
     }else {
-      alert("Wrong ID Number Try Again")
+      alert("Incorrect password. Use today's date as DDMMYYYY.");
       document.getElementById("ID").value = "";
     }
   }
