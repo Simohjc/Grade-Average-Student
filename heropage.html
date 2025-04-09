@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <link href="index.css" rel="stylesheet">
 </head>
-<body>
+<body class="heroBody">
+  <div id="bg-blur"></div>
 <div id="section">
   <h1>Student Cover Sheet</h1>
   <h3>Calculate the GPA - Classrom B12</h3>
-<br>
    <div id="project">
      <div id="Line">
           <label for="first">Full Name :</label>
@@ -24,15 +24,12 @@
           <label for="fg">Third Grade :</label>
           <input type="number" id="tg" placeholder="tg" />
     </div>
-    <br>
     <div id="resultLine">
           <button onclick="noteAverage()">Average Result</button>
-          <br>
           <input type="text" id="result" placeholder="Final Grade"/>
           <p id="expl"></p>
     </div>
     <h1>Average Result Full Classroom:</h1>
-    <br>
     <ol id="fulllist"></ol>
     <button onclick="clearList()">Clear List</button>
     <button onclick="logOut()">Log Out</button>
@@ -43,5 +40,6 @@
   <script src="index.js"></script>
 </body>
 </html>
+
 
 
