@@ -10,7 +10,6 @@
 
     myId = isNaN(myId) ? 0 : myId;
     if (myId === correctPassword){
-      alert("Login successful!");
       window.location.href = "heropage.html";
     }else {
       alert("Incorrect password. Use today's date as MMDDYYYY.");
@@ -32,7 +31,7 @@ function noteAverage() {
   
     // Calculate average
     let average = ((fgs + sgs + tgs) / 3).toFixed(2);
-    let resultColor = average < 10 ? "red" : "green";
+    let resultColor = average < 10 ? "#ef233c" : "#06d6a0";
   
     // Display average
     let results = document.getElementById('result');
@@ -67,6 +66,7 @@ function noteAverage() {
     document.getElementById('fg').value = "";
     document.getElementById('sg').value = "";
     document.getElementById('tg').value = "";
+    document.getElementById("result").value = "";
   }
   
   // Function to display students with colors
@@ -98,6 +98,9 @@ function noteAverage() {
   
   // Load list when page loads
   window.onload = displayStudentList;
+  
+
+
   
 
 
