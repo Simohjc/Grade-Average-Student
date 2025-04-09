@@ -40,15 +40,6 @@
 
 /* Section styles */
 
-#bg-blur {
-    position: fixed;
-    top: 0; left: 0;
-    width: 50%;
-    height: 50%;
-    background-color: #fff;
-    filter: blur(10px);
-    z-index: -1;
-  }
   #section {
     display: flex;
     flex-direction: column;
